@@ -24,8 +24,8 @@ const about = () => {
                     vpsservers.
                 </p>
                 <p>
-                    This is complicated stuff, people! Don't be surprised if I
-                    break it a few times 😄
+                    This is complicated stuff, people! Don&apos;t be surprised
+                    if I break it a few times 😄
                 </p>
             </div>
         </>
