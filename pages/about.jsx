@@ -19,13 +19,26 @@ const about = () => {
                 </p>
                 <h3>About the Website</h3>
                 <p>
-                    Currently builting with Next.js, Sanity.io and React. The
-                    site is servered from Docker containers on a VPS at
-                    vpsservers.
+                    Currently builting with
+                    <a href='https://nextjs.org'> Next.js</a>,
+                    <a href='https://www.sanity.io'> Sanity.io</a>, and
+                    <a href='https://reactjs.org'> React</a>. The site is
+                    servered from <a href='https://vercel.com'>Vercel</a>.
+                    Though, likely soon, from Docker containers on a VPS.
+                    Because, we love Docker. This is complicated stuff, people!
+                    Don&apos;t be surprised if I break it a few times 😄
                 </p>
                 <p>
-                    This is complicated stuff, people! Don&apos;t be surprised
-                    if I break it a few times 😄
+                    It is off to a good start. I have finally settled on the
+                    perfect combination for me. However, there is a whole lot of
+                    work left to do before this is complete. So, stay tuned!
+                </p>
+                <p>
+                    First up is the font. This poppins is a little hard for me
+                    to read. We also want the font hosted by us and not google.
+                    I don&apos;t want to hass any more cross origin cookies than
+                    neccessary. There is already a YouYube cookie, as they host
+                    the videos on the blog pages.
                 </p>
             </div>
         </>
