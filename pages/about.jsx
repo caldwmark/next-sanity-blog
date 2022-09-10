@@ -40,6 +40,17 @@ const about = () => {
                     neccessary. There is already a YouYube cookie, as they host
                     the videos on the blog pages.
                 </p>
+                <p>
+                    More meta is also needed. It will probably be the next react
+                    component to build. Then probably work on something more
+                    noticeable or interactive.
+                </p>
+                <p>
+                    The hardest ding we took at lighthouse was on performance.
+                    Seeing yellow means we should work on that issue soon, too.
+                    We want 100s across the board, if not we at least want all
+                    green.
+                </p>
             </div>
         </>
     )
