@@ -11,7 +11,12 @@ const Post = ({ post }) => {
     return (
         <Link href={`/blog/${post.slug.current}`}>
             <div className='card card-main'>
-                <img src={post.mainImage} alt='' />
+                <img
+                    src={post.mainImage}
+                    alt='video thumbnail'
+                    width='500'
+                    height='281'
+                />
                 <h3>{post.title}</h3>
                 <div className='post-date'>{date}</div>
             </div>

@@ -1,5 +1,6 @@
 // import { useState, useEffect } from 'react'
 // import imageUrlBuilder from '@sanity/image-url'
+import Head from 'next/head'
 import BlockContent from '@sanity/block-content-to-react'
 import Youtube from '../../components/Youtube'
 
@@ -20,17 +21,22 @@ const Post = ({ title, body, youtube, image }) => {
     // }, [image])
 
     return (
-        <div className='container'>
-            <h1 className='post-title'>{title}</h1>
-            <div className='card card-page'>
-                <Youtube embedCode={youtube} />
-                {/* {<img src={imageUrl ? imageUrl : null} />} */}
+        <>
+            <Head>
+                <title>{title} | BCP</title>
+            </Head>
+            <div className='container'>
+                <h1 className='post-title'>{title}</h1>
+                <div className='card card-page'>
+                    <Youtube embedCode={youtube} />
+                    {/* {<img src={imageUrl ? imageUrl : null} />} */}
 
-                <div className='post-body'>
-                    <BlockContent blocks={body} />
+                    <div className='post-body'>
+                        <BlockContent blocks={body} />
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
