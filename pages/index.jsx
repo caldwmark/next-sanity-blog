@@ -4,8 +4,6 @@ import imageUrlBuilder from '@sanity/image-url'
 import Post from '../components/Post'
 
 export default function Home({ posts }) {
-    //console.log(posts)
-
     const [mappedPosts, setMappedPosts] = useState([])
 
     useEffect(() => {
@@ -41,6 +39,12 @@ export default function Home({ posts }) {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
+            <div>
+                The website has changed again. We traded Gatsby for Next. And,
+                the code was completely rewritten. The context has remained the
+                same. The old site can be seen
+                <a href='https://netlify.bearcountrypublishing.com'> here</a>.
+            </div>
             <div className='posts'>
                 {mappedPosts.length ? (
                     mappedPosts.map((p, index) => <Post key={index} post={p} />)
