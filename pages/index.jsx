@@ -42,8 +42,11 @@ export default function Home({ posts }) {
             <div>
                 The website has changed again. We traded Gatsby for Next. And,
                 the code was completely rewritten. The context has remained the
-                same. The old site can be seen
-                <a href='https://netlify.bearcountrypublishing.com'> here</a>.
+                same. Here we can provide a link to{' '}
+                <a href='https://netlify.bearcountrypublishing.com'>
+                    the old site
+                </a>
+                .
             </div>
             <div className='posts'>
                 {mappedPosts.length ? (
