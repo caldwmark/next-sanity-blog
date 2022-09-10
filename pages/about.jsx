@@ -36,7 +36,7 @@ const about = () => {
                 <p>
                     First up is the font. This poppins is a little hard for me
                     to read. We also want the font hosted by us and not google.
-                    I don&apos;t want to hass any more cross origin cookies than
+                    I don&apos;t want to have any more cross origin cookies than
                     neccessary. There is already a YouYube cookie, as they host
                     the videos on the blog pages.
                 </p>
