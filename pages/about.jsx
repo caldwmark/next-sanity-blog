@@ -11,7 +11,7 @@ const about = () => {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <div className='post'>
+            <div className='about'>
                 <h2>About</h2>
                 <p>
                     Matters of public interest for news, educational, and

@@ -39,7 +39,7 @@ export default function Home({ posts }) {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <div>
+            <div className='note'>
                 The website has changed again. We traded Gatsby for Next. And,
                 the code was completely rewritten. The context has remained the
                 same. Here we can provide a link to{' '}
