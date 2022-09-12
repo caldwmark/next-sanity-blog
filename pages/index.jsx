@@ -59,7 +59,7 @@ export default function Home({ posts }) {
     )
 }
 
-export const getServerSideProps = async pageContext => {
+export const getStaticProps = async () => {
     const query = encodeURIComponent(
         '*[ _type == "post" ] | order(priority desc, publishedAt desc)'
     )

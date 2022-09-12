@@ -40,8 +40,28 @@ const Post = ({ title, body, youtube, image }) => {
     )
 }
 
-export const getServerSideProps = async pageContext => {
-    const pageSlug = pageContext.query.slug
+export const getStaticPaths = async () => {
+    const query = encodeURIComponent(`*[ _type == "post" ]`)
+    const url = `https://8w3msx9z.api.sanity.io/v1/data/query/production?query=${query}`
+    const data = await fetch(url).then(res => res.json())
+    console.log(data)
+
+    const paths = data.result.map(post => {
+        return {
+            params: {
+                slug: post.slug.current,
+            },
+        }
+    })
+
+    return {
+        paths,
+        fallback: false,
+    }
+}
+
+export const getStaticProps = async context => {
+    const pageSlug = context.params.slug
 
     if (!pageSlug) {
         return {
