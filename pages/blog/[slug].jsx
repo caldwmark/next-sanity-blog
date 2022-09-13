@@ -20,17 +20,17 @@ const Post = ({ title, body, youtube, image }) => {
     //     setImageUrl(imgBuilder.image(image))
     // }, [image])
 
+    const headTitle = `${title} | BCP`
+
     return (
         <>
             <Head>
-                <title>{title} | BCP</title>
+                <title>{headTitle}</title>
             </Head>
             <div className='post-container'>
                 <h1 className='post-title'>{title}</h1>
                 <div className='card card-page'>
                     <Youtube embedCode={youtube} />
-                    {/* {<img src={imageUrl ? imageUrl : null} />} */}
-
                     <div className='post-body'>
                         <BlockContent blocks={body} />
                     </div>
@@ -44,7 +44,7 @@ export const getStaticPaths = async () => {
     const query = encodeURIComponent(`*[ _type == "post" ]`)
     const url = `https://8w3msx9z.api.sanity.io/v1/data/query/production?query=${query}`
     const data = await fetch(url).then(res => res.json())
-    console.log(data)
+    //console.log(data)
 
     const paths = data.result.map(post => {
         return {
