@@ -15,8 +15,8 @@ const Post = ({ post }) => {
                 <img
                     src={post.mainImage}
                     alt='video thumbnail'
-                    width='500'
-                    height='281'
+                    width='400'
+                    height='225'
                 />
                 <h3>{post.title}</h3>
                 <div className='post-date'>{date}</div>
