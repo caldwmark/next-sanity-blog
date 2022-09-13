@@ -19,8 +19,8 @@ export default function Home({ posts }) {
                         ...p,
                         mainImage: imgBuilder
                             .image(p.mainImage)
-                            .width(500)
-                            .height(281),
+                            .width(400)
+                            .height(225),
                     }
                 })
             )
