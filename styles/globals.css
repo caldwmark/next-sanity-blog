@@ -56,13 +56,21 @@ header {
     background-color: #000;
     color: dodgerblue;
     min-height: 3rem;
-    padding: 0 1rem;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid rgba(160, 160, 160, 0.3);
 }
 
+header h2 {
+    cursor: pointer;
+}
+
 header a {
     color: #fff;
+}
+
+ul.main-nav-list {
+    padding: 0;
 }
 
 footer {
@@ -248,6 +256,7 @@ blockquote {
     .main-nav ul {
         margin: 0 0;
     }
+
     .about {
         margin: 1rem 1rem;
     }
@@ -266,5 +275,14 @@ blockquote {
     ol,
     blockquote {
         margin: 1rem 0;
+    }
+    header {
+        padding-bottom: 2rem;
+    }
+    .header-layout {
+        display: block;
+    }
+    header h2 {
+        text-align: center;
     }
 }
