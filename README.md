@@ -1,6 +1,6 @@
 # Next &middot; Sanity &middot; Blog
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).  <= That's how we started.  And, a fragment left from the original README
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) &nbsp; <= &nbsp; That's how we started.  And, a fragment left from the original README
 
 ## I've Come a Little Ways
 
