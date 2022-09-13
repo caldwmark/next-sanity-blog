@@ -34,22 +34,21 @@ const about = () => {
                     work left to do before this is complete. So, stay tuned!
                 </p>
                 <p>
-                    First up is the font. This poppins is a little hard for me
-                    to read. We also want the font hosted by us and not google.
-                    I don&apos;t want to have any more cross origin cookies than
-                    neccessary. There is already a YouYube cookie, as they host
-                    the videos on the blog pages.
-                </p>
-                <p>
-                    More meta is also needed. It will probably be the next react
-                    component to build. Then probably work on something more
-                    noticeable or interactive.
+                    My to do list includes: addressing the meta. It will
+                    probably be the next react component to build. Then work on
+                    something more noticeable or interactive.
                 </p>
                 <p>
                     The hardest ding we took at lighthouse was on performance.
                     Seeing yellow means we should work on that issue soon, too.
                     We want 100s across the board, if not we at least want all
                     green.
+                </p>
+                <p>
+                    To accomplish that.. Maybe learn sanity image urlBuilder or
+                    probably better, next.js sanity image. The later letting us
+                    actually use the Image tag from the cdn. Does that mean blur
+                    loading and lazy images too?!?!
                 </p>
             </div>
         </>
