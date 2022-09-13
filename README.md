@@ -4,9 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## I've Come a Little Ways
 
-Sanity is tied to it.  I've change this same code from an markdown blog, to a sanity backend running SSR, and then to SSG.  I've also tweaked the sstyle enough that it looks pretty good, even on the mobile.  I even build myu own React YouTube component!  Hopefully in a week or two, this will be a comvenient starter for any next app.
+Sanity is tied to it.  I've change this same code from an markdown blog, to a sanity backend running SSR, and then to SSG.  I've also tweaked the style enough that it looks pretty good, even on the mobile.  I even build my own React YouTube component!  Hopefully in a week or two, this will be a convenient starter for any Next app.
 
-If you can't tell..  I'm sold on the React Bandwagon.  Though, I have tons left to learn!
+If you can't tell..  I'm sold on the React Bandwagon.  Though, I still have tons left to learn!
 
 ## See it Live
 
