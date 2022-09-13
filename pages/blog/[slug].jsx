@@ -25,7 +25,7 @@ const Post = ({ title, body, youtube, image }) => {
             <Head>
                 <title>{title} | BCP</title>
             </Head>
-            <div className='container'>
+            <div className='post-container'>
                 <h1 className='post-title'>{title}</h1>
                 <div className='card card-page'>
                     <Youtube embedCode={youtube} />

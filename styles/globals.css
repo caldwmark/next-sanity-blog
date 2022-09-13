@@ -79,6 +79,14 @@ footer {
 
 .container {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* overflow: auto; */
+    padding: 0 10px;
+}
+
+.post-container {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     /* overflow: auto; */
@@ -180,7 +188,7 @@ ol {
 }
 
 .flex-nav {
-    width: 900px;
+    width: 1200px;
     max-width: 100%;
     padding: 0 10px;
     margin: 0 auto;
