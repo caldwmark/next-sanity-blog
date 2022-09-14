@@ -24,20 +24,20 @@ export default function Header() {
                             <li className={style[`nav-list-item`]}>
                                 <Link
                                     className={style[`main-nav-link`]}
-                                    href='/documents'
+                                    href='/about'
                                 >
                                     <a className={style['link-anchor']}>
-                                        Documents
+                                        About
                                     </a>
                                 </Link>
                             </li>
                             <li className={style[`nav-list-item`]}>
                                 <Link
                                     className={style[`main-nav-link`]}
-                                    href='/about'
+                                    href='/documents'
                                 >
                                     <a className={style['link-anchor']}>
-                                        About
+                                        Documents
                                     </a>
                                 </Link>
                             </li>

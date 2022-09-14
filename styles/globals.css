@@ -227,13 +227,4 @@ blockquote {
     blockquote {
         margin: 1rem 0;
     }
-    .main-header {
-        padding-bottom: 2rem;
-    }
-    .header-layout {
-        display: block;
-    }
-    .main-header h2 {
-        text-align: center;
-    }
 }

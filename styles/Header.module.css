@@ -26,7 +26,7 @@
 .nav-list-item {
     font-size: 1rem;
     display: inline;
-    padding: 1rem;
+    padding: 1rem 0 1rem 2rem;
 }
 
 .flex-nav {
@@ -58,4 +58,30 @@
 
 .link-anchor:hover {
     color: #999;
+}
+
+@media (max-width: 600px) {
+    .link-anchor {
+        padding: 0 1rem;
+    }
+
+    .main-nav-list {
+        margin: 0 0;
+    }
+
+    .main-header {
+        padding-bottom: 2rem;
+    }
+
+    .header-layout {
+        display: block;
+    }
+
+    .header-logo {
+        text-align: center;
+    }
+
+    .nav-list-item {
+        padding: 1rem;
+    }
 }
