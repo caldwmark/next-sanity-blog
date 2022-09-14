@@ -24,10 +24,6 @@ main {
     min-height: 78vh;
 }
 
-li {
-    font-size: 1rem;
-}
-
 p {
     margin: 15px 0;
     line-height: 1.8;
@@ -35,42 +31,13 @@ p {
 
 a {
     text-decoration: none;
-    color: deepskyblue;
+    color: dodgerblue;
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-.header-layout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-header {
-    background-color: #111111;
-    color: dodgerblue;
-    min-height: 3rem;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(62, 62, 104, 0.4);
-}
-
-header h2 {
-    cursor: pointer;
-}
-
-header a {
-    color: #fff;
-}
-
-ul.main-nav-list {
-    padding: 0;
 }
 
 .container {
@@ -196,34 +163,11 @@ blockquote {
     border-radius: 8px;
 }
 
-.flex-nav {
-    width: 1200px;
-    max-width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
 .flex-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-}
-
-.main-nav {
-    display: inline;
-}
-
-.main-nav ul {
-    margin: 1em 0;
-    text-align: center;
-}
-.main-nav-list li {
-    display: inline;
-}
-.main-nav a {
-    display: inline-block;
-    padding: 0.5em 0 0.5rem 2rem;
 }
 
 .note {
@@ -283,13 +227,13 @@ blockquote {
     blockquote {
         margin: 1rem 0;
     }
-    header {
+    .main-header {
         padding-bottom: 2rem;
     }
     .header-layout {
         display: block;
     }
-    header h2 {
+    .main-header h2 {
         text-align: center;
     }
 }
