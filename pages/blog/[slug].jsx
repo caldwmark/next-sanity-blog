@@ -5,27 +5,12 @@ import BlockContent from '@sanity/block-content-to-react'
 import Youtube from '../../components/Youtube'
 
 const Post = ({ title, body, youtube, image }) => {
-    //console.log(image, youtube)
-
-    //if ()
-
-    // const [imageUrl, setImageUrl] = useState('')
-
-    // useEffect(() => {
-    //     const imgBuilder = imageUrlBuilder({
-    //         projectId: '8w3msx9z',
-    //         dataset: 'production',
-    //     })
-
-    //     setImageUrl(imgBuilder.image(image))
-    // }, [image])
-
-    const headTitle = `${title} | BCP`
+    // const headTitle = `${title} &middot; BCP`
 
     return (
         <>
             <Head>
-                <title>{headTitle}</title>
+                <title>{title} &middot; BCP</title>
             </Head>
             <div className='post-container'>
                 <h1 className='post-title'>{title}</h1>
