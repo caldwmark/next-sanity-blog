@@ -1,9 +1,4 @@
 import Link from 'next/link'
-//import Image from 'next/image'
-import Img from 'next/image'
-
-import sanityClient from '@sanity/client'
-import { useNextSanityImage } from 'next-sanity-image'
 
 const Post = ({ post }) => {
     const date = new Date(post.publishedAt).toLocaleDateString('en-us', {
