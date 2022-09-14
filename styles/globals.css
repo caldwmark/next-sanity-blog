@@ -53,12 +53,12 @@ img {
 }
 
 header {
-    background-color: #000;
+    background-color: #111111;
     color: dodgerblue;
     min-height: 3rem;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+    border-bottom: 1px solid rgba(62, 62, 104, 0.4);
 }
 
 header h2 {
@@ -73,6 +73,14 @@ ul.main-nav-list {
     padding: 0;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* overflow: auto; */
+    padding: 0 10px;
+}
+
 footer {
     background-color: #000;
     color: lightgray;
@@ -81,14 +89,6 @@ footer {
     font-size: 11px;
     margin-top: 3rem;
     border-top: 1px solid rgba(160, 160, 160, 0.3);
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* overflow: auto; */
-    padding: 0 10px;
 }
 
 .post-container {
@@ -201,6 +201,13 @@ blockquote {
     max-width: 100%;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .main-nav {
