@@ -4,6 +4,8 @@ import Head from 'next/head'
 import BlockContent from '@sanity/block-content-to-react'
 import Youtube from '../../components/Youtube'
 
+import style from '../../styles/slug.module.css'
+
 const Post = ({ title, body, youtube, image }) => {
     // const headTitle = `${title} &middot; BCP`
 
@@ -12,11 +14,11 @@ const Post = ({ title, body, youtube, image }) => {
             <Head>
                 <title>{title} &middot; BCP</title>
             </Head>
-            <div className='post-container'>
-                <h1 className='post-title'>{title}</h1>
-                <div className='card card-page'>
+            <div className={style.container}>
+                <h1 className={style.title}>{title}</h1>
+                <div className={style.card}>
                     <Youtube embedCode={youtube} />
-                    <div className='post-body'>
+                    <div className={style.body}>
                         <BlockContent blocks={body} />
                     </div>
                 </div>

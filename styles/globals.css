@@ -48,14 +48,6 @@ img {
     padding: 0 10px;
 }
 
-.post-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    /* overflow: auto; */
-    padding: 0 10px;
-}
-
 .btn {
     display: inline-block;
     background: steelblue;
@@ -115,15 +107,6 @@ img {
     margin: 1rem 5rem;
 }
 
-.post-title {
-    margin: 15px 0 5px 0;
-}
-
-.post-date {
-    font-size: small;
-    color: rgb(160, 160, 160);
-}
-
 .post-body p,
 ul,
 ol,
@@ -141,22 +124,6 @@ blockquote {
     padding: 20px;
     margin: 20px 0;
     line-height: 2.3;
-}
-
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border-radius: 8px;
 }
 
 .note {

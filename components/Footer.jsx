@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles[`flex-footer`]}>
-                &copy; {YEAR} &middot; Bear Country Publishing
+                &copy;{YEAR} &middot; Bear Country Publishing
                 <a className={styles[`footer-link`]} href='https://nextjs.org/'>
                     Next
                 </a>

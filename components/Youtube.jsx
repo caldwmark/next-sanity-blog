@@ -1,7 +1,10 @@
+import style from '../styles/Post.module.css'
+
 const Youtube = ({ embedCode }) => {
     return (
-        <div className='video-responsive'>
+        <div className={style.responsive}>
             <iframe
+                className={style.video}
                 width='800'
                 height='450'
                 src={`https://www.youtube.com/embed/${embedCode}`}

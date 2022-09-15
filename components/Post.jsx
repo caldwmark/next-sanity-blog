@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import style from '../styles/Post.module.css'
 
 const Post = ({ post }) => {
     const date = new Date(post.publishedAt).toLocaleDateString('en-us', {
@@ -8,18 +11,20 @@ const Post = ({ post }) => {
         day: 'numeric',
     })
 
+    console.log(post)
+
     return (
         <Link href={`/blog/${post.slug.current}`}>
-            <div className='card-main'>
-                <img
-                    src={post.mainImage}
+            <div className={style.card}>
+                <Image
+                    src={`${post.mainImage}`}
                     alt='video thumbnail'
                     width='400'
                     height='225'
                 />
-                <div className='card'>
-                    <h3 className='post-title'>{post.title}</h3>
-                    <div className='post-date'>{date}</div>
+                <div className={style.info}>
+                    <h3 className={style.title}>{post.title}</h3>
+                    <div className={style.date}>{date}</div>
                 </div>
             </div>
         </Link>

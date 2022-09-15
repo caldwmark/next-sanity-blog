@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    margin: 15px 0 5px 0;
+}
+
+.date {
+    font-size: small;
+    color: rgb(160, 160, 160);
+}
