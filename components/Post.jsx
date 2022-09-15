@@ -19,8 +19,8 @@ const Post = ({ post }) => {
                 <Image
                     src={`${post.mainImage}`}
                     alt='video thumbnail'
-                    width='400'
-                    height='225'
+                    width='500'
+                    height='281'
                 />
                 <div className={style.info}>
                     <h3 className={style.title}>{post.title}</h3>
