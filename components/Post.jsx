@@ -10,15 +10,17 @@ const Post = ({ post }) => {
 
     return (
         <Link href={`/blog/${post.slug.current}`}>
-            <div className='card card-main'>
+            <div className='card-main'>
                 <img
                     src={post.mainImage}
                     alt='video thumbnail'
                     width='400'
                     height='225'
                 />
-                <h3>{post.title}</h3>
-                <div className='post-date'>{date}</div>
+                <div className='card'>
+                    <h3 className='post-title'>{post.title}</h3>
+                    <div className='post-date'>{date}</div>
+                </div>
             </div>
         </Link>
     )
