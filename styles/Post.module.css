@@ -10,12 +10,13 @@
 }
 
 .card:hover {
-    border: rgba(16, 16, 255, 0.8) 1px solid;
-    box-shadow: 1px 1px 4px 2px rgba(16, 16, 255, 0.8);
+    border: rgba(16, 16, 255, 0.8) 2px solid;
+    box-shadow: 1px 1px 6px 2px rgba(16, 16, 255, 0.8);
+    cursor: pointer;
 }
 
 .title {
-    margin: 0qqq 0 5px 0;
+    margin: 0 0 5px 0;
 }
 
 .date {
