@@ -4,7 +4,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>About | BCP</title>
+                <title>About &middot; BCP</title>
                 <meta
                     name='description'
                     content='Matters of public interest for news, educational, and entertainment purposes'
@@ -34,22 +34,21 @@ const about = () => {
                     work left to do before this is complete. So, stay tuned!
                 </p>
                 <p>
-                    My to do list includes: addressing the meta. It will
-                    probably be the next react component to build. Then work on
-                    something more noticeable or interactive.
+                    I got the Image component working from Sanity. How awesome
+                    is that?!?! I had given up on that being posible and had
+                    decided it was still worth the performance ding to be able
+                    to upload the image to sanity when the post is being
+                    written. Like one stop shop. No hard coding anything on the
+                    site just to add a post. Then I stubbled on just the right
+                    video!
                 </p>
-                <p>
-                    The hardest ding we took at lighthouse was on performance.
-                    Seeing yellow means we should work on that issue soon, too.
-                    We want 100s across the board, if not we at least want all
-                    green.
-                </p>
-                <p>
-                    To accomplish that.. Maybe learn sanity image urlBuilder or
-                    probably better, next.js sanity image. The later letting us
-                    actually use the Image tag from the cdn. Does that mean blur
-                    loading and lazy images too?!?!
-                </p>
+                <p>My to do list includes:</p>
+                <ol>
+                    <li>finish the move to modular style</li>
+                    <li>build the meta component</li>
+                    <li>build the schema for this page on studio</li>
+                    <li>build the contact page</li>
+                </ol>
             </div>
         </>
     )
