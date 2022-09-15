@@ -40,13 +40,9 @@ export default function Home({ posts }) {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <div className='note'>
-                The website has changed again. We traded Gatsby for Next. And,
-                the code was completely rewritten. The context has remained the
-                same. Here we can provide a link to{' '}
-                <a href='https://netlify.bearcountrypublishing.com'>
-                    the old site
-                </a>
-                .
+                Pleaase be aware that this site is still being actively
+                developed. You could find a few bugs or glitches as things
+                change. With that said, enjoy the site.
             </div>
             <div className='posts'>
                 {mappedPosts.length ? (

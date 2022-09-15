@@ -12,12 +12,12 @@ const about = () => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <div className='about'>
-                <h2>About</h2>
+                <h1>About</h1>
                 <p>
                     Matters of public interest for news, educational, and
                     entertainment purposes.
                 </p>
-                <h3>About the Website</h3>
+                <h2>The Site Build</h2>
                 <p>
                     Currently builting with
                     <a href='https://nextjs.org'> Next.js</a>,
@@ -42,12 +42,13 @@ const about = () => {
                     site just to add a post. Then I stubbled on just the right
                     video!
                 </p>
-                <p>My to do list includes:</p>
+                <h2>Things to Do</h2>
                 <ol>
                     <li>finish the move to modular style</li>
                     <li>build the meta component</li>
                     <li>build the schema for this page on studio</li>
                     <li>build the contact page</li>
+                    <li>something else.. (brain fart)</li>
                 </ol>
             </div>
         </>

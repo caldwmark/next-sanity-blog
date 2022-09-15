@@ -24,9 +24,12 @@ main {
     min-height: 78vh;
 }
 
-p {
+p,
+ul,
+ol,
+blockquote {
     margin: 15px 0;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 a {
@@ -61,6 +64,8 @@ img {
     font-family: inherit;
 }
 
+/*-------------------
+
 .btn:focus {
     outline: none;
 }
@@ -74,6 +79,7 @@ img {
     color: #000;
     margin-bottom: 20px;
 }
+
 
 .posts {
     display: grid;
@@ -101,7 +107,9 @@ img {
 .card-main:hover {
     border: rgba(16, 16, 255, 0.8) 1px solid;
     box-shadow: 1px 1px 4px 2px rgba(16, 16, 255, 0.8);
-}
+} 
+
+---*/
 
 .about {
     margin: 1rem 5rem;
@@ -124,6 +132,20 @@ blockquote {
     padding: 20px;
     margin: 20px 0;
     line-height: 2.3;
+}
+
+.about,
+.docs {
+    max-width: 700px;
+    margin: 3rem auto 0;
+}
+
+.about p {
+    margin: 1rem 2rem;
+}
+
+.docs p {
+    margin: 1rem 2rem;
 }
 
 .note {

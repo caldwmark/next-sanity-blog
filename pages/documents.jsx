@@ -11,7 +11,7 @@ const documents = () => {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <div>
+            <div className='docs'>
                 <h1>Documents</h1>
                 <p>This is a placeholder for links to future documents</p>
             </div>
