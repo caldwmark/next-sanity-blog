@@ -102,7 +102,6 @@ footer {
 
 .card {
     padding: 0 15px 15px;
-
     margin: 5px;
 }
 
@@ -217,7 +216,7 @@ blockquote {
         padding: 0 2rem;
     }
     .card {
-        padding: 0;
+        /* padding: 0 0 15px; */
         border: none;
     }
     .card-main {
