@@ -48,24 +48,6 @@ img {
     padding: 0 10px;
 }
 
-footer {
-    background-color: #000;
-    color: lightgray;
-    min-height: 1rem;
-    padding: 5px 1rem;
-    font-size: 13px;
-    margin-top: 3rem;
-    border-top: 1px solid rgba(160, 160, 160, 0.3);
-}
-
-.footer-link {
-    padding: 5px 10px;
-}
-
-.footer-link:hover {
-    color: cyan;
-}
-
 .post-container {
     width: 100%;
     max-width: 900px;
@@ -175,13 +157,6 @@ blockquote {
     width: 100%;
     position: absolute;
     border-radius: 8px;
-}
-
-.flex-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
 }
 
 .note {
