@@ -118,10 +118,13 @@ img {
 }
 
 .post-body p,
-ul,
-ol,
 blockquote {
     margin: 1rem 5rem;
+}
+
+.post-body ul,
+ol {
+    margin: 1rem;
 }
 
 .post-body blockquote {
