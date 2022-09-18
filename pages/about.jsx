@@ -39,7 +39,7 @@ const about = () => {
                     decided it was still worth the performance ding to be able
                     to upload the image to sanity when the post is being
                     written. Like one stop shop. No hard coding anything on the
-                    site just to add a post. Then I stubbled on just the right
+                    site just to add a post. Then I stumbled on just the right
                     video!
                 </p>
                 <h2>Things to Do</h2>
