@@ -19,14 +19,14 @@ const about = () => {
                 </p>
                 <h2>The Site Build</h2>
                 <p>
-                    Currently builting with
+                    Currently building with
                     <a href='https://nextjs.org'> Next.js</a>,
                     <a href='https://www.sanity.io'> Sanity.io</a>, and
-                    <a href='https://reactjs.org'> React</a>. The site is
-                    servered from <a href='https://vercel.com'>Vercel</a>.
-                    Though, likely soon, from Docker containers on a VPS.
-                    Because, we love Docker. This is complicated stuff, people!
-                    Don&apos;t be surprised if I break it a few times 😄
+                    <a href='https://reactjs.org'> React</a>. The site is served
+                    from <a href='https://vercel.com'>Vercel</a>. Though, likely
+                    soon, from Docker containers on a VPS. Because, we love
+                    Docker. This is complicated stuff, people! Don&apos;t be
+                    surprised if I break it a few times 😄
                 </p>
                 <p>
                     It is off to a good start. I have finally settled on the
@@ -35,7 +35,7 @@ const about = () => {
                 </p>
                 <p>
                     I got the Image component working from Sanity. How awesome
-                    is that?!?! I had given up on that being posible and had
+                    is that?!?! I had given up on that being possible and had
                     decided it was still worth the performance ding to be able
                     to upload the image to sanity when the post is being
                     written. Like one stop shop. No hard coding anything on the
