@@ -11,7 +11,7 @@ const Post = ({ post }) => {
         day: 'numeric',
     })
 
-    console.log(post)
+    // console.log(post)
 
     return (
         <Link href={`/blog/${post.slug.current}`}>
