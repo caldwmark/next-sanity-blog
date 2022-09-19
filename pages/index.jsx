@@ -61,9 +61,9 @@ export const getStaticProps = async () => {
     )
     const url = `https://8w3msx9z.api.sanity.io/v1/data/query/production?query=${query}`
 
-    const result = await fetch(url).then(res => res.json())
+    const p = await fetch(url).then(res => res.json())
 
-    if (!result.result || !result.result.length) {
+    if (!p.result || !p.result.length) {
         return {
             props: {
                 posts: [],
@@ -72,7 +72,7 @@ export const getStaticProps = async () => {
     } else {
         return {
             props: {
-                posts: result.result,
+                posts: p.result,
             },
         }
     }
