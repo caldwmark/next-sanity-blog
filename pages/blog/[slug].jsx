@@ -9,10 +9,20 @@ import style from '../../styles/slug.module.css'
 const Post = ({ title, body, youtube, image }) => {
     // const headTitle = `${title} &middot; BCP`
 
+    let desc = body[0].children[0].text
+
+    desc.length < 90 ? (desc = desc + ' ' + body[1].children[0].text) : 0
+    desc.length < 90 ? (desc = desc + ' ' + body[2].children[0].text) : 0
+
+    desc.length > 100 ? (desc = desc.substring(0, 99) + '...') : 0
+
+    console.log(desc.length, desc)
+
     return (
         <>
             <Head>
                 <title>{title} &middot; BCP</title>
+                <meta name='description' content={desc} />
             </Head>
             <div className={style.container}>
                 <h1 className={style.title}>{title}</h1>
