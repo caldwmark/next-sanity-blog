@@ -40,6 +40,7 @@ export default function Home({ posts }) {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <div className='note'></div>
+            <h1 className='top-header'>Recent Posts</h1>
             <div className='posts'>
                 {mappedPosts.length ? (
                     mappedPosts.map((p, index) => <Post key={index} post={p} />)
