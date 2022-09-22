@@ -39,11 +39,7 @@ export default function Home({ posts }) {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <div className='note'>
-                Pleaase be aware that this site is still being actively
-                developed. You could find a few bugs or glitches as things
-                change. With that said, enjoy the site.
-            </div>
+            <div className='note'></div>
             <div className='posts'>
                 {mappedPosts.length ? (
                     mappedPosts.map((p, index) => <Post key={index} post={p} />)
