@@ -1,10 +1,7 @@
-// import { useState, useEffect } from 'react'
-// import imageUrlBuilder from '@sanity/image-url'
-// import Head from 'next/head'
 import BlockContent from '@sanity/block-content-to-react'
+
 import Youtube from '../../components/Youtube'
 import Meta from '../../components/Meta'
-
 import style from '../../styles/slug.module.css'
 
 const Post = ({ title, body, youtube, image }) => {
@@ -14,8 +11,6 @@ const Post = ({ title, body, youtube, image }) => {
     desc.length < 90 ? (desc = desc + ' ' + body[2].children[0].text) : 0
 
     desc.length > 100 ? (desc = desc.substring(0, 99) + '...') : 0
-
-    //console.log(desc.length, desc)
 
     return (
         <>
@@ -37,7 +32,6 @@ export const getStaticPaths = async () => {
     const query = encodeURIComponent(`*[ _type == "post" ]`)
     const url = `https://8w3msx9z.api.sanity.io/v1/data/query/production?query=${query}`
     const data = await fetch(url).then(res => res.json())
-    //console.log(data)
 
     const paths = data.result.map(post => {
         return {
@@ -79,7 +73,6 @@ export const getStaticProps = async context => {
             props: {
                 body: post.body,
                 title: post.title,
-                // image: post.mainImage,
                 youtube: post.youtube.code,
             },
         }
