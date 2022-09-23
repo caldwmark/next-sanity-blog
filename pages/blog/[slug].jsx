@@ -1,14 +1,13 @@
 // import { useState, useEffect } from 'react'
 // import imageUrlBuilder from '@sanity/image-url'
-import Head from 'next/head'
+// import Head from 'next/head'
 import BlockContent from '@sanity/block-content-to-react'
 import Youtube from '../../components/Youtube'
+import Meta from '../../components/Meta'
 
 import style from '../../styles/slug.module.css'
 
 const Post = ({ title, body, youtube, image }) => {
-    // const headTitle = `${title} &middot; BCP`
-
     let desc = body[0].children[0].text
 
     desc.length < 90 ? (desc = desc + ' ' + body[1].children[0].text) : 0
@@ -16,14 +15,11 @@ const Post = ({ title, body, youtube, image }) => {
 
     desc.length > 100 ? (desc = desc.substring(0, 99) + '...') : 0
 
-    console.log(desc.length, desc)
+    //console.log(desc.length, desc)
 
     return (
         <>
-            <Head>
-                <title>{title} &middot; BCP</title>
-                <meta name='description' content={desc} />
-            </Head>
+            <Meta title={title} desc={desc} />
             <div className={style.container}>
                 <h1 className={style.title}>{title}</h1>
                 <div className={style.card}>

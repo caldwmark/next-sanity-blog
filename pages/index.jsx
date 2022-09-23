@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import Head from 'next/head'
 import imageUrlBuilder from '@sanity/image-url'
 import Post from '../components/Post'
+import Meta from '../components/Meta'
 
 export default function Home({ posts }) {
     const [mappedPosts, setMappedPosts] = useState([])
@@ -31,14 +31,7 @@ export default function Home({ posts }) {
 
     return (
         <>
-            <Head>
-                <title>Bear Country Publishing</title>
-                <meta
-                    name='description'
-                    content='Matters of public interest for news, educational, and entertainment purposes'
-                />
-                <link rel='icon' href='/favicon.ico' />
-            </Head>
+            <Meta />
             <div className='note'></div>
             <h1 className='top-header'>Recent Posts</h1>
             <div className='posts'>
