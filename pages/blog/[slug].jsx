@@ -4,7 +4,7 @@ import Youtube from '../../components/Youtube'
 import Meta from '../../components/Meta'
 import style from '../../styles/slug.module.css'
 
-const Post = ({ title, body, youtube, image }) => {
+const Post = ({ title, body, youtube, image, slug }) => {
     let desc = body[0].children[0].text
 
     desc.length < 90 ? (desc = desc + ' ' + body[1].children[0].text) : 0
@@ -14,7 +14,13 @@ const Post = ({ title, body, youtube, image }) => {
 
     return (
         <>
-            <Meta title={title} desc={desc} />
+            <Meta
+                title={title}
+                desc={desc}
+                robots='index, nofollow'
+                image={image}
+                slug={slug}
+            />
             <div className={style.container}>
                 <h1 className={style.title}>{title}</h1>
                 <div className={style.card}>
@@ -74,6 +80,8 @@ export const getStaticProps = async context => {
                 body: post.body,
                 title: post.title,
                 youtube: post.youtube.code,
+                image: post.mainImage,
+                slug: post.slug.current,
             },
         }
     }

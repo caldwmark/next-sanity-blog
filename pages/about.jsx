@@ -3,7 +3,7 @@ import Meta from '../components/Meta'
 const about = () => {
     return (
         <>
-            <Meta title='About' />
+            <Meta title='About' ogPage='/about' />
             <div className='about'>
                 <h1>About</h1>
                 <p>
