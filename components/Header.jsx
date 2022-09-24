@@ -9,9 +9,9 @@ export default function Header() {
                 <nav className={style[`header-layout`]}>
                     <Link className={style[`main-header-link`]} href='/'>
                         <h2 className={style[`header-logo`]}>
-                            <Image
+                            <img
                                 src='/images/BCP_Logo_alpha.webp'
-                                alt='video thumbnail'
+                                alt='Bear Country Publishing logo'
                                 width='395'
                                 height='51'
                             />
