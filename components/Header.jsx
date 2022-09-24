@@ -10,8 +10,8 @@ export default function Header() {
                     <Link className={style[`main-header-link`]} href='/'>
                         <h2 className={style[`header-logo`]}>
                             <img
-                                src='/images/BCP_Logo_alpha.webp'
-                                alt='Bear Country Publishing logo'
+                                src='/images/BCP_logo_alpha.webp'
+                                alt='Bear Country Publishing'
                                 width='395'
                                 height='51'
                             />

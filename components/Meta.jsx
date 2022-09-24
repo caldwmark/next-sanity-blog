@@ -5,8 +5,7 @@ const Meta = ({ title, desc, robots, image, ogPage, slug }) => {
     let ogType = 'website'
     let ogImage
 
-    if (!image)
-        ogImage = 'https://www.bearcountrypublishing.com/images/BCP_Logo.webp'
+    if (!image) ogImage = '/images/BCP_Logo.webp'
     else ogImage = image
 
     const defaultTitle = 'Bear Country Publishing'
