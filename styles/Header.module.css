@@ -19,6 +19,11 @@
     cursor: pointer;
 }
 
+.logo-img {
+    width: 395px;
+    height: 51px;
+}
+
 .main-header-link {
     color: #fff;
 }

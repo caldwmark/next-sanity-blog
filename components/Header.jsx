@@ -11,7 +11,13 @@ export default function Header() {
                 <nav className={style[`header-layout`]}>
                     <Link className={style[`main-header-link`]} href='/'>
                         <h2 className={style[`header-logo`]}>
-                            <Image src={logo} alt='Bear Country Publishing' />
+                            <Image
+                                className={style[`logo-img`]}
+                                src={logo}
+                                alt='Bear Country Publishing'
+                                width={395}
+                                height={51}
+                            />
                         </h2>
                     </Link>
                     <div className={style[`main-nav`]}>
