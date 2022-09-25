@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+
 import style from '../styles/Header.module.css'
+import logo from '../public/images/BCP_logo_alpha-528.webp'
 
 export default function Header() {
     return (
@@ -9,12 +11,7 @@ export default function Header() {
                 <nav className={style[`header-layout`]}>
                     <Link className={style[`main-header-link`]} href='/'>
                         <h2 className={style[`header-logo`]}>
-                            <img
-                                src='/images/BCP_logo_alpha.webp'
-                                alt='Bear Country Publishing'
-                                width='395'
-                                height='51'
-                            />
+                            <Image src={logo} alt='Bear Country Publishing' />
                         </h2>
                     </Link>
                     <div className={style[`main-nav`]}>
