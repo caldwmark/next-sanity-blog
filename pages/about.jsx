@@ -5,7 +5,7 @@ const about = () => {
         <>
             <Meta title='About' ogPage='/about' />
             <div className='about'>
-                <h1>About</h1>
+                <h2>About</h2>
                 <p>
                     Matters of public interest for news, educational, and
                     entertainment purposes.

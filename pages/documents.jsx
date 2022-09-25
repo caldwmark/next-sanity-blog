@@ -5,7 +5,7 @@ const documents = () => {
         <>
             <Meta title='Documents' ogPage='/documents' />
             <div className='docs'>
-                <h1>Documents</h1>
+                <h2>Documents</h2>
                 <p>This is a placeholder for links to future documents</p>
             </div>
         </>

@@ -10,7 +10,7 @@ export default function Header() {
             <div className={style[`flex-nav`]}>
                 <nav className={style[`header-layout`]}>
                     <Link className={style[`main-header-link`]} href='/'>
-                        <h2 className={style[`header-logo`]}>
+                        <h1 className={style[`header-logo`]}>
                             <Image
                                 className={style[`logo-img`]}
                                 src={logo}
@@ -18,7 +18,7 @@ export default function Header() {
                                 width={395}
                                 height={51}
                             />
-                        </h2>
+                        </h1>
                     </Link>
                     <div className={style[`main-nav`]}>
                         <ul className={style[`main-nav-list`]}>

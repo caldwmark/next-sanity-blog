@@ -22,7 +22,7 @@ const Post = ({ title, body, youtube, image, slug }) => {
                 slug={slug}
             />
             <div className={style.container}>
-                <h1 className={style.title}>{title}</h1>
+                <h2 className={style.title}>{title}</h2>
                 <div className={style.card}>
                     <Youtube embedCode={youtube} />
                     <div className={style.body}>

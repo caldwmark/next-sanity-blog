@@ -33,7 +33,7 @@ export default function Home({ posts }) {
         <>
             <Meta />
             <div className='note'></div>
-            <h1 className='top-header'>Recent Posts</h1>
+            <h2 className='top-header'>Recent Posts</h2>
             <div className='posts'>
                 {mappedPosts.length ? (
                     mappedPosts.map((p, index) => <Post key={index} post={p} />)
