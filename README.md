@@ -1,6 +1,8 @@
 [![Node.js CI](https://github.com/caldwmark/next-sanity-blog/actions/workflows/node.js.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/node.js.yml)
 &nbsp;
 [![Dependency Review](https://github.com/caldwmark/next-sanity-blog/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/dependency-review.yml)
+&nbsp;
+[![CodeQL](https://github.com/caldwmark/next-sanity-blog/actions/workflows/codeql.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/codeql.yml)
 
 # Next &middot; Sanity &middot; Blog
 
