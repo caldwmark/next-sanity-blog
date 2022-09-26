@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/caldwmark/next-sanity-blog/actions/workflows/node.js.2.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/node.js.2.yml)
+[![Node.js CI](https://github.com/caldwmark/next-sanity-blog/actions/workflows/node.js.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/node.js.yml)
 
 # Next &middot; Sanity &middot; Blog
 
