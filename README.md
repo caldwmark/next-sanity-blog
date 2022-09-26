@@ -3,6 +3,8 @@
 [![Dependency Review](https://github.com/caldwmark/next-sanity-blog/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/dependency-review.yml)
 &nbsp;
 [![CodeQL](https://github.com/caldwmark/next-sanity-blog/actions/workflows/codeql.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/codeql.yml)
+&nbsp;
+[![Scorecards supply-chain security](https://github.com/caldwmark/next-sanity-blog/actions/workflows/scorecards.yml/badge.svg)](https://github.com/caldwmark/next-sanity-blog/actions/workflows/scorecards.yml)
 
 # Next &middot; Sanity &middot; Blog
 
