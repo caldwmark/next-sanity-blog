@@ -1,51 +1,37 @@
+import BlockContent from '@sanity/block-content-to-react'
 import Meta from '../components/Meta'
 
-const about = () => {
+const about = ({ title, body }) => {
     return (
         <>
-            <Meta title='About' ogPage='/about' />
+            <Meta title={title} ogPage='/about' />
             <div className='about'>
-                <h2>About</h2>
-                <p>
-                    Matters of public interest for news, educational, and
-                    entertainment purposes.
-                </p>
-                <h2>The Site Build</h2>
-                <p>
-                    Currently building with
-                    <a href='https://nextjs.org'> Next.js</a>,
-                    <a href='https://www.sanity.io'> Sanity.io</a>, and
-                    <a href='https://reactjs.org'> React</a>. The site is served
-                    from <a href='https://vercel.com'>Vercel</a>. Though, likely
-                    soon, from Docker containers on a VPS. Because, we love
-                    Docker. This is complicated stuff, people! Don&apos;t be
-                    surprised if I break it a few times 😄
-                </p>
-                <p>
-                    It is off to a good start. I have finally settled on the
-                    perfect combination for me. However, there is a whole lot of
-                    work left to do before this is complete. So, stay tuned!
-                </p>
-                <p>
-                    I got the Image component working from Sanity. How awesome
-                    is that?!?! I had given up on that being possible and had
-                    decided it was still worth the performance ding to be able
-                    to upload the image to sanity when the post is being
-                    written. Like one stop shop. No hard coding anything on the
-                    site just to add a post. Then I stumbled on just the right
-                    video!
-                </p>
-                <h2>Things to Do</h2>
-                <ol>
-                    <li>finish the move to modular style</li>
-                    <li>build the meta component</li>
-                    <li>build the schema for this page on studio</li>
-                    <li>build the contact page</li>
-                    <li>something else.. (brain fart)</li>
-                </ol>
+                <h2>{title}</h2>
+                <BlockContent blocks={body} />
             </div>
         </>
     )
+}
+
+export const getStaticProps = async () => {
+    const query = encodeURIComponent('*[ _type == "page" && title == "About" ]')
+    const url = `https://8w3msx9z.api.sanity.io/v1/data/query/production?query=${query}`
+
+    const p = await fetch(url).then(res => res.json())
+    const page = p.result[0]
+
+    if (!page) {
+        return {
+            notFound: true,
+        }
+    } else {
+        return {
+            props: {
+                body: page.body,
+                title: page.title,
+            },
+        }
+    }
 }
 
 export default about
