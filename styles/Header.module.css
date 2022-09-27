@@ -10,7 +10,7 @@
     background-color: #282828;
     color: dodgerblue;
     min-height: 3rem;
-    padding: 1rem;
+    padding: 5px 15px 0;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid rgba(160, 160, 160, 0.3);
 }
