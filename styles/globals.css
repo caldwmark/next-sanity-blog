@@ -97,6 +97,13 @@ img {
     margin: 30px 0;
 }
 
+.resources {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 2rem;
+}
+
 /* 
 
 .card {
@@ -168,6 +175,12 @@ ol {
     /* padding: 0 5rem; */
 }
 
+@media (max-width: 950px) {
+    .resources {
+        display: block;
+    }
+}
+
 @media (max-width: 800px) {
     .posts {
         grid-template-columns: repeat(2, 1fr);
@@ -187,7 +200,8 @@ ol {
 }
 
 @media (max-width: 500px) {
-    .posts {
+    .posts,
+    .resources {
         grid-template-columns: 1fr;
     }
     .header-layout {

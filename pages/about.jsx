@@ -17,8 +17,8 @@ export const getStaticProps = async () => {
     const query = encodeURIComponent('*[ _type == "page" && title == "About" ]')
     const url = `https://8w3msx9z.api.sanity.io/v1/data/query/production?query=${query}`
 
-    const p = await fetch(url).then(res => res.json())
-    const page = p.result[0]
+    const data = await fetch(url).then(res => res.json())
+    const page = data.result[0]
 
     if (!page) {
         return {

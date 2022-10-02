@@ -1,0 +1,40 @@
+.card {
+    background-color: #141414;
+    /* box-shadow: 1px 1px 4px 2px rgba(160, 160, 160, 0.3); */
+    border-radius: 10px;
+    border-top: 1px solid #333;
+    border-left: 2px solid #333;
+    margin: 1rem;
+}
+
+.info {
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+.desc {
+    padding-top: 1rem;
+}
+
+.title {
+    margin: 0 0 5px 0;
+}
+
+.link a:hover {
+    color: cyan;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 100%;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .card {
+        width: 100%;
+        padding: 1rem 3rem 0;
+        border-left: 0;
+        border-radius: 0;
+    }
+}

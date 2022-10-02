@@ -50,6 +50,16 @@ export default function Header() {
                                     </a>
                                 </Link>
                             </li>
+                            <li className={style[`nav-list-item`]}>
+                                <Link
+                                    className={style[`main-nav-link`]}
+                                    href='/resources'
+                                >
+                                    <a className={style['link-anchor']}>
+                                        Resources
+                                    </a>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>
