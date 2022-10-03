@@ -1,6 +1,9 @@
 import style from '../styles/Resource.module.css'
 
 const Resource = ({ resource }) => {
+    if (resource.desc.length > 135)
+        resource.desc = resource.desc.slice(0, 135) + '...'
+
     return (
         <div className={style.card}>
             <div className={style.info}>
