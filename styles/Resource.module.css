@@ -38,3 +38,17 @@
         border-radius: 0;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+        padding: 1rem 0 0;
+        margin: 1rem 0;
+        border-left: 0;
+        border-radius: 0;
+    }
+    .link {
+        overflow: hidden;
+        height: 1.5rem;
+    }
+}
