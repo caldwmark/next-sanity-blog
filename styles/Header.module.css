@@ -64,24 +64,7 @@
     color: #999;
 }
 
-@media (max-width: 600px) {
-    .link-anchor {
-        padding: 0 1rem;
-    }
-
-    .main-nav-list {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-
-        margin: 0 0;
-    }
-
-    .main-header {
-        padding-bottom: 2rem;
-    }
-
+@media (max-width: 850px) {
     .header-layout {
         display: block;
     }
@@ -89,8 +72,18 @@
     .header-logo {
         text-align: center;
     }
-
     .nav-list-item {
         padding: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        margin: 0 0;
     }
 }
