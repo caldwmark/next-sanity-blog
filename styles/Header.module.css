@@ -35,8 +35,7 @@
 }
 
 .flex-nav {
-    width: 1200px;
-    max-width: 100%;
+    width: 100%;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -71,6 +70,11 @@
     }
 
     .main-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
         margin: 0 0;
     }
 
