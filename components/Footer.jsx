@@ -15,7 +15,7 @@ const Footer = () => {
                     <li className={styles.item}>
                         <a
                             className={styles[`footer-link`]}
-                            href='https://web.dev/measure/?gclid=CjwKCAjw6fyXBhBgEiwAhhiZsomBRG6o3zyMvSZGg-MWoDmu2N2J25HYLMBI9DSUvRZUmHrZ13oLdxoC1v4QAvD_BwE&url=https%3A%2F%2Fwww.bearcountrypublishing.com'
+                            href='https://pagespeed.web.dev/analysis/https-www-bearcountrypublishing-com/g9asohunn2?form_factor=desktop'
                         >
                             Lighthouse Scores
                         </a>
